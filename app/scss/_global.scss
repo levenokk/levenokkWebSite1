@@ -1,0 +1,19 @@
+.title {
+  font-size: 45px;
+  font-weight: bold;
+  display: inline-block;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  span {
+    @include fontPro();
+    color: $orange;
+  }
+  &__text {
+    font-size: 16px;
+    color: $lightGray;
+    max-width: 715px;
+    text-align: center;
+    line-height: 25px;
+    margin: 0 auto 105px;
+  }
+}
