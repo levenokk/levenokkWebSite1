@@ -1,0 +1,11 @@
+@mixin font($font, $color: black, $fz: 16, $fw: 400, $st: normal) {
+  @if ($font == "pro") {
+    font-family: "Source Sans Pro", sans-serif;
+  } @else {
+    font-family: "Open Sans", sans-serif;
+  }
+  color: $color;
+  font-size: $fz + px;
+  font-weight: $fw;
+  font-style: $st;
+}
