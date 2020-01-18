@@ -182,8 +182,8 @@ ul {
 
 .working-process {
   text-align: center;
-  padding: 60px 0 100px;
-  margin-bottom: 160px; 
+  padding: 60px 0 60px;
+  margin-bottom: 100px;
 }
 
 .working-item {
@@ -198,12 +198,14 @@ ul {
   font-size: 50px;
   margin-bottom: 25px;
 }
+
 .working-item__title {
   font-size: 20px;
   letter-spacing: 0.1px;
   text-transform: capitalize;
   margin-bottom: 25px;
 }
+
 .working-item__text {
   font-size: 15px;
   line-height: 22px;
@@ -228,6 +230,78 @@ ul {
     color: black;
     font-size: 16px;
   }
+}
+
+.featured-works {
+  text-align: center;
+  padding-bottom: 60px;
+  margin-bottom: 240px;
+}
+
+.featured-img {
+  max-width: 360px;
+  width: 100%;
+  max-height: 365px;
+  height: 100%;
+  margin-bottom: 22px;
+}
+
+.services {
+  text-align: center;
+}
+
+.services__item {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  text-align: center;
+  line-height: 100px;
+  margin-bottom: 8px;
+  box-shadow: 0px 0px 36px 0px rgba(20, 20, 21, 0.2);
+  background-color: rgb(255, 255, 255);
+  border-radius: 2px;
+}
+
+.modern-block {
+  text-align: left;
+}
+
+.modern-block {
+    margin-left: 35px;
+}
+.modern-block__title {
+  padding-bottom: 21px;
+  position: relative;
+  margin-bottom: 19px;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 57px;
+    height: 3px;
+    background-color: $orange;
+    bottom: 0;
+  }
+}
+.modern-block__text {
+    font-size: 16px;
+    color: $grey;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+.modern-block__btn {
+    margin-left: 50px;
+    font-size: 16px;
+    line-height: 25px;
+    color: $grey;
+    i{
+        font-size: 15px;
+        margin-right: 15px;
+    }
+}
+
+.services{
+    padding-bottom: 100px;
+    margin-bottom: 200px;
 }
 
 @import "media";

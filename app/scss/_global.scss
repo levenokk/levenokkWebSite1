@@ -2,8 +2,9 @@
   font-size: 45px;
   font-weight: bold;
   display: inline-block;
-  text-transform: uppercase;
+  text-transform: capitalize;
   margin-bottom: 25px;
+  color: #585858;
   span {
     @include fontPro();
     color: $orange;
