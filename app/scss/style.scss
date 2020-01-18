@@ -54,6 +54,7 @@ ul {
 
 .header {
   padding-top: 82px;
+  padding-bottom: 100px;
   .container {
     position: relative;
   }
@@ -178,4 +179,55 @@ ul {
     @include fontPro2($orange, inherit, 700);
   }
 }
+
+.working-process {
+  text-align: center;
+  padding: 60px 0 100px;
+  margin-bottom: 160px; 
+}
+
+.working-item {
+  text-align: center;
+  color: #fff;
+  padding: 50px 15px 20px;
+  max-width: 260px;
+  margin: 0 auto;
+}
+
+.working-item__ico {
+  font-size: 50px;
+  margin-bottom: 25px;
+}
+.working-item__title {
+  font-size: 20px;
+  letter-spacing: 0.1px;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+}
+.working-item__text {
+  font-size: 15px;
+  line-height: 22px;
+  margin-bottom: 35px;
+}
+.working-item__btn {
+  color: black;
+  font-size: 16px;
+  background-color: #fff;
+  border-radius: 25px;
+  width: 228/260 * 100%;
+  margin: 0 auto;
+  line-height: 55px;
+  height: 55px;
+  text-align: center;
+  position: relative;
+  i {
+    position: absolute;
+    left: 30px;
+    transform: translateY(-50%);
+    top: 50%;
+    color: black;
+    font-size: 16px;
+  }
+}
+
 @import "media";
