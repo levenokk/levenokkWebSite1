@@ -46,6 +46,7 @@ ol,
 ul {
   padding-left: 0;
   list-style: none;
+  margin: 0;
 }
 
 .container {
@@ -267,7 +268,7 @@ ul {
 }
 
 .modern-block {
-    margin-left: 35px;
+  margin-left: 35px;
 }
 .modern-block__title {
   padding-bottom: 21px;
@@ -283,25 +284,140 @@ ul {
   }
 }
 .modern-block__text {
-    font-size: 16px;
-    color: $grey;
-    line-height: 25px;
-    margin-bottom: 30px;
+  font-size: 16px;
+  color: $grey;
+  line-height: 25px;
+  margin-bottom: 30px;
 }
 .modern-block__btn {
-    margin-left: 50px;
-    font-size: 16px;
-    line-height: 25px;
-    color: $grey;
-    i{
-        font-size: 15px;
-        margin-right: 15px;
+  margin-left: 50px;
+  font-size: 16px;
+  line-height: 25px;
+  color: $grey;
+  i {
+    font-size: 15px;
+    margin-right: 15px;
+  }
+}
+
+.services {
+  padding-bottom: 100px;
+  margin-bottom: 200px;
+}
+
+.persone-block {
+  max-width: 360px;
+  margin: 0 auto;
+  max-height: 440px;
+  height: 100%;
+  position: relative;
+  transition: all 0.2s linear;
+  background-color: #fff;
+  .persone__img {
+    max-width: 100%;
+    height: 100%;
+    transition: all 0.2s linear;
+  }
+  &:hover {
+    .persone__socials {
+      display: block;
     }
+    .persone__info {
+      bottom: 0px;
+    }
+    .persone__work {
+      color: $orange;
+    }
+    .persone__img {
+      opacity: 0;
+    }
+    .persone__statistics {
+      opacity: 1;
+    }
+    .design::after {
+      width: 122/150 * 100%;
+    }
+    .english::after {
+      width: 108/150 * 100%;
+    }
+    .communication::after {
+      width: 116/150 * 100%;
+    }
+  }
 }
 
-.services{
-    padding-bottom: 100px;
-    margin-bottom: 200px;
+.persone__statistics {
+  position: absolute;
+  transition: all 0.2s linear;
+  top: 40%;
+  left: 50%;
+  max-width: 150px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  .design,
+  .english,
+  .communication {
+    padding-bottom: 11px;
+    margin-bottom: 11px;
+    position: relative;
+    transition: all 0.9s linear;
+    &::before {
+      content: "";
+      width: 100%;
+      height: 4px;
+      border-radius: 1px;
+      position: absolute;
+      bottom: 0;
+      background-color: #817f7e;
+    }
+    &:after {
+      content: "";
+      height: 4px;
+      border-radius: 1px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: $orange;
+      transition: all 0.5s linear;
+      width: 0;
+    }
+  }
 }
 
+.persone__info {
+  position: absolute;
+  width: 260/360 * 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -30px;
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+  color: #737373;
+  transition: all 0.2s linear;
+}
+.persone__name {
+  font-size: 30px;
+  line-height: 45px;
+  text-transform: capitalize;
+}
+
+.persone__work {
+  font-size: 15px;
+  margin-bottom: 10px;
+  transition: all 0.2s linear;
+}
+
+.persone__socials {
+  transition: all 0.2s linear;
+  display: none;
+}
+
+.persone-social__item {
+  display: inline-block;
+  margin: 0 5px;
+  a {
+    color: #b2aaa8;
+  }
+}
 @import "media";
