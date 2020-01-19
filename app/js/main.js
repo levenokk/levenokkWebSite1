@@ -2,6 +2,7 @@ $(function () {
 
     $('.menu-btn').on('click', function () {
         $('.header__nav-inner').slideToggle();
+        $(this).toggleClass('menu-btn__active');
     })
 
     $('.clients-said__slider-wrapper').slick({
