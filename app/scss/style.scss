@@ -305,6 +305,12 @@ ul {
   margin-bottom: 200px;
 }
 
+.team-skills {
+  text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 210px;
+}
+
 .persone-block {
   max-width: 360px;
   margin: 0 auto;
@@ -420,4 +426,132 @@ ul {
     color: #b2aaa8;
   }
 }
+
+.clients-said {
+  text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 190px;
+}
+
+.clients-said__slider-wrapper {
+  position: relative;
+  .slick-dots {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    li {
+      margin: 0 3px;
+    }
+    button {
+      font-size: 0;
+      background-color: #e0e0e0;
+      width: 18px;
+      height: 6px;
+      border: none;
+      border-radius: 2px;
+      outline: none;
+      transition: all 0.8s ease-in-out;
+      &:hover {
+        background-color: rgba($orange, 0.8);
+      }
+    }
+    .slick-active {
+      button {
+        background-color: $orange;
+        transition: all 0.2s ease;
+      }
+    }
+  }
+  .next-arrow {
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    right: -12px;
+    z-index: 10;
+    font-size: 17px;
+    width: 40px;
+    height: 40px;
+    transition: all 0.2s linear;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      color: #fff;
+      background-color: $orange;
+    }
+  }
+  .prev-arrow {
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    left: -12px;
+    z-index: 10;
+    font-size: 17px;
+    width: 40px;
+    height: 40px;
+    transition: all 0.2s linear;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      color: #fff;
+      background-color: $orange;
+    }
+  }
+}
+
+.clients-said__block {
+  max-width: 540px;
+  width: 100%;
+  text-align: center;
+  font-size: 17px;
+  line-height: 27px;
+  color: #737373;
+  padding-bottom: 35px;
+  padding-top: 100px;
+  padding: 100px 40px 35px;
+  border: 1px solid transparent;
+  position: relative;
+  transition: all 0.2s linear;
+  border-radius: 2px;
+  &:hover {
+    border-color: #d3d3d3;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    transform: translate(-50%, -50%);
+    background-image: url("../img/Ellipse.png");
+    width: 101px;
+    height: 101px;
+    left: 50%;
+  }
+}
+.clients-said__text {
+  @include fontPro();
+  margin-bottom: 24px;
+}
+
+.clients-said__stars {
+  margin-bottom: 24px;
+  font-size: 13px;
+}
+
+.clients-saud__star {
+  margin: 0 1px;
+  color: yellow;
+}
+
+.clients-said__persone {
+  font-style: italic;
+  strong {
+    font-weight: 700;
+    color: black;
+    font-style: normal;
+  }
+}
+
 @import "media";
