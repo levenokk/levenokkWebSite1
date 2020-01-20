@@ -40,12 +40,12 @@ $(function () {
         }, 500);
     })
 
-    $(window).on('load', function () {
-        document.body.style.overflow = 'hidden';
-        setTimeout(() => {
-            $('.preloader').addClass('done')
-            document.body.style.overflow = '';
-        }, 1000);
-    })
+    // $(window).on('load', function () {
+    //     document.body.style.overflow = 'hidden';
+    //     setTimeout(() => {
+    //         $('.preloader').addClass('done')
+    //         document.body.style.overflow = '';
+    //     }, 1000);
+    // })
 });
 
